@@ -10,34 +10,50 @@ namespace _21maiAnton
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(); //ekzemplar classa point
-            p1.x = 1;
+            Point p1 = new Point(1, 3, '*'); //ekzemplar classa point. Инкапсуляция
+            /*p1.x = 1; //peremennqe kotorie hranyat vsju informaciju po povodu nashei novoi to4ki na ekrane
             p1.y = 3;
-            p1.sym = '*';
-            Draw(p1.x, p1.y, p1.sym); //vqvodim na ekran
+            p1.sym = '*';*/
+            p1.Draw(); //vqvodim na ekran
             /*p1.x = 1;
             p1.y = 3;
             p1.sym = '*';
             Draw(p1.x, p1.y, p1.sym);*/
 
-            Point p2 = new Point(); //vtoroi ekzemplar classa point
+            Point p2 = new Point(4, 5, '#'); //vtoroi ekzemplar classa point. Инкапсуляция
             /*int x1 = 1; //int hranit celie 4isla
             int y1 = 3;
             char sym1 = '*';  //char hranit symbols
             Draw(x1, y1, sym1);*/
+            /*p2.x = 4;
+            p2.y = 5;
+            p2.sym = '#';*/
+            p2.Draw();
 
-            int x2 = 4;
-            int y2 = 5;
-            char sym2 = '#';
-            Draw(x2, y2, sym2);
+
+
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
+
+            int x = numList[0]; //v peremennuju x zapisivaem zna4enie pervogo elementa spiska
+            int y = numList[1];
+            int z = numList[2];
+
+            foreach(int i in numList)
+            {
+                Console.WriteLine(i);
+            }
+
 
             Console.ReadLine();
         }
 
-        static void Draw(int x, int y, char sym) 
+        /*static void Draw(int x, int y, char sym) //funkcija budet vqvodit na ekran to4ku.
         {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-        }
+            Console.SetCursorPosition(x, y); //ukazivaem koordinatq
+            Console.Write(sym); //vqvodim v etoi pozicii symbol
+        }*/
     }
 }

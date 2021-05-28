@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21maiAnton
 {
-    class VerticalLine
+    class VerticalLine : Figure
     {
         public VerticalLine(int yUP, int yDown, int x, char sym)
         {

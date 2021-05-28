@@ -10,6 +10,23 @@ namespace _21maiAnton
     {
         static void Main(string[] args)
         {
+            Console.SetBufferSize(80, 25);
+
+            //отрисовка рамочки
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftline = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightline = new VerticalLine(0, 24, 78, '+');
+            upLine.Drow();
+            downLine.Drow();
+            leftline.Drow();
+            rightline.Drow();
+
+
+
+
+
+
             Point p1 = new Point(1, 3, '*'); //ekzemplar classa point. Инкапсуляция
             /*p1.x = 1; //peremennqe kotorie hranyat vsju informaciju po povodu nashei novoi to4ki na ekrane
             p1.y = 3;
@@ -32,7 +49,13 @@ namespace _21maiAnton
 
 
 
-            List<int> numList = new List<int>();
+
+            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
+            line.Drow();
+
+            Console.ReadLine();
+            //prepjatstvie dlja zmeiki
+            /*List<int> numList = new List<int>();
             numList.Add(0);
             numList.Add(1);
             numList.Add(2);
@@ -46,8 +69,12 @@ namespace _21maiAnton
                 Console.WriteLine(i);
             }
 
+            numList.RemoveAt(0); //funkcija spiska remove 4tobi udalit element po porjadkovomu nomeru
 
-            Console.ReadLine();
+            List<Point> pList = new List<Point>();
+            pList.Add(p1); //dobavlaem peremennie
+            pList.Add(p2);*/
+
         }
 
         /*static void Draw(int x, int y, char sym) //funkcija budet vqvodit na ekran to4ku.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21maiAnton
 {
-    class Point //class eto tip dannqh
+    class Point //class eto tip dannqh. Opisivaem kak vqgladit to4ka.
     {
         public int x; //peremennqe kotorie zadajut koordinatq to4ki po osi x
         public int y;
@@ -16,7 +16,7 @@ namespace _21maiAnton
         {
             Console.WriteLine("Создается новая точка");
         }
-
+        //konstruktori - metodi s pomowi kotorih mi mowem sozdavat to4ki.
         public Point(int _x, int _y, char _sym) //funkcija kotoraja ponimaet koordinatq
         {
             x = _x;
